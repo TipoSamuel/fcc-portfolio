@@ -6,6 +6,7 @@
   --crimson-blaze: #d83030;
   --steel-mist: #999f9d;
   --pearl-frost: #ededed;
+  --green-mantis: #87fb1e;
   /* fonts */
   --font-sans: 'Bigger Display', sans-serif;
   --font-mono: 'Reddit Mono Variable', monospace;
@@ -91,7 +92,7 @@ body {
   z-index: 0;
   /* pointer-events: none; */
   will-change: transform;
-  animation: noise 3s steps(3) infinite both;
+  animation: noise 3s steps(4) infinite;
 }
 
 .title {
@@ -177,11 +178,28 @@ body {
 
 /* projects section */
 #projects {
+  .projects-introduction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 250px;
+    padding: 0 20px;
+    font-family: var(--font-mono);
+    color: var(--pearl-frost);
+    p {
+      max-width: 70%;
+    }
+    svg {
+      justify-self: end;
+      fill: var(--green-mantis);
+      height: 200px;
+    }
+  }
+
   .projects-grid-header {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-
     span {
       color: var(--pearl-frost);
       font-family: var(--font-mono);
@@ -204,66 +222,97 @@ body {
       bottom: 0;
       border-left: 1px solid var(--pearl-frost); /* Ajusta el grosor y el color de la línea aquí */
     }
-  }
 
-  .project-wrapper {
-    padding: 8px;
-    background-color: orangered;
-    border-radius: 24px;
-  }
-
-  hr {
-    border: none;
-    border-top: 1px solid #aaa;
-    margin: 15px 0;
-  }
-
-  img {
-    height: 650px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 16px;
-  }
-
-  .project-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    .project-info-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: 60px;
-
-      h3 {
-        font-family: var(--font-mono);
-        font-size: 1rem;
-        font-weight: 400;
-        text-transform: uppercase;
+    .project-tile {
+      hr {
+        border: none;
+        border-top: 1px solid var(--pearl-frost);
+        margin: 15px 0;
       }
+      .project-wrapper {
+        padding: 8px;
+        border-radius: 24px;
+        background-color: #141414;
+        transition: all ease 0.3s;
 
-      span {
-        font-family: var(--font-mono);
-        font-size: 0.875rem;
-        text-transform: uppercase;
-        font-weight: 400;
-        color: var(--pearl-frost);
+        img {
+          height: 650px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 16px;
+          filter: grayscale(0%);
+          transition: all ease 0.3s;
+        }
+
+        svg {
+          height: 24px;
+          color: var(--pearl-frost);
+          transition: all ease 0.3s;
+        }
+
+        &:hover {
+          background-color: var(--green-mantis);
+
+          img {
+            filter: grayscale(100%);
+            transition: all ease 0.3s;
+          }
+
+          .project-info-icon {
+            svg {
+              color: var(--shadow-slate);
+            }
+          }
+        }
+        .project-info {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          .project-info-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 60px;
+
+            h3 {
+              font-family: var(--font-mono);
+              font-size: 1rem;
+              font-weight: 400;
+              text-transform: uppercase;
+              color: var(--pearl-frost);
+              transition: all ease 0.3s;
+              .project-wrapper:hover & {
+                color: var(--shadow-slate);
+              }
+            }
+
+            span {
+              font-family: var(--font-mono);
+              font-size: 0.875rem;
+              text-transform: uppercase;
+              font-weight: 400;
+              color: var(--pearl-frost);
+              transition: all ease 0.3s;
+
+              .project-wrapper:hover & {
+                color: var(--shadow-slate);
+              }
+            }
+          }
+
+          .project-info-icon {
+            text-align: end;
+            align-content: center;
+          }
+        }
       }
     }
+  }
+}
 
-    .project-info-icon {
-      text-align: end;
-      align-content: center;
-
-      a:visited {
-        color: inherit;
-      }
-
-      svg {
-        color: var(--pearl-frost);
-        height: 24px;
-      }
-    }
+#contact {
+  .title {
+    margin-top: 60px;
   }
 }
 
