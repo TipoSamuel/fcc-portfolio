@@ -421,7 +421,48 @@ body {
   }
 }
 
+/* contact section */
 #contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 40px;
+    padding: 0 20px;
+    margin-top: 40px;
+
+    .contact-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      svg {
+        color: var(--pearl-frost);
+        height: 8rem;
+      }
+
+      a {
+        color: var(--pearl-frost);
+        font-family: var(--font-sans);
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+
+    span {
+      font-family: var(--font-sans);
+      font-size: 8rem;
+      color: var(--pearl-frost);
+    }
+
+  }
+
   .marquee {
     width: 100%;
     margin: 100px 0;
