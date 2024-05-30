@@ -6,26 +6,14 @@
   --green-mantis: #87fb1e;
 
   /* fonts */
-  /* --font-sans: 'Bigger Display', sans-serif; */
   --font-mono: 'Reddit Mono Variable', monospace;
   --font-sans: 'Thunder Black', sans-serif;
 }
 
 /* fonts */
 @font-face {
-  font-family: 'Karla Variable';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 200 800;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/karla:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-    U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* Webfont: Thunder-BlackHCItalic */
-@font-face {
   font-family: 'Thunder Black';
-  src: url('https://pub-451c95ff41d14cb081cd173f05d2b9e9.r2.dev/fonts%2FThunder-BlackLC.woff2');
+  src: url('https://pub-451c95ff41d14cb081cd173f05d2b9e9.r2.dev/fonts%2FThunder-BlackLC.woff2') format('woff2');
 }
 
 @font-face {
@@ -36,15 +24,6 @@
   src: url(https://cdn.jsdelivr.net/fontsource/fonts/reddit-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
     U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* @font-face {
-  font-family: 'Bigger Display';
-  src: url(https://pub-451c95ff41d14cb081cd173f05d2b9e9.r2.dev/fonts%2Fbigger-display.woff2);
-} */
-@font-face {
-  font-family: 'Gendy';
-  src: url(https://pub-451c95ff41d14cb081cd173f05d2b9e9.r2.dev/gendy-font.otf);
 }
 
 /* CSS reset */
