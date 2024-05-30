@@ -2,10 +2,9 @@
 :root {
   /* colors */
   --shadow-slate: #050505;
-  --crimson-blaze: #d83030;
-  --steel-mist: #999f9d;
   --pearl-frost: #ededed;
   --green-mantis: #87fb1e;
+
   /* fonts */
   /* --font-sans: 'Bigger Display', sans-serif; */
   --font-mono: 'Reddit Mono Variable', monospace;
