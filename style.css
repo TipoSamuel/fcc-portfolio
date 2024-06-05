@@ -179,55 +179,56 @@ body {
 }
 
 #welcome-section {
+  /* Esto hace que la sección ocupe todo el alto de la pantalla */
   display: flex;
   flex-direction: column;
   row-gap: 50px;
-  justify-content: space-evenly;
-  height: 100vh;
-  /* Esto hace que la sección ocupe todo el alto de la pantalla */
-  position: relative;
+  justify-content: space-between;
+  height: 100dvh;
 
   /* Esto permite posicionar absolutamente los spans dentro */
   .hero {
     display: flex;
     justify-content: center;
-  }
+    position: relative;
+    padding: 0 20px;
 
   h1 {
+      position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-content: space-between;
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
     max-width: 1024px;
-    font-size: 15em;
+      font-size: clamp(8rem, 3rem + 12.5vw, 15rem);
+      padding: 0 20px;
 
-    /* Ajusta esto según tus necesidades */
-    .hello {
+
+      span {
+        &:first-child {
       text-align: left;
     }
 
-    .world {
+        &:last-child {
       text-align: right;
+        }
     }
   }
 
   img {
-    width: 480px;
-    height: 640px;
+      max-width: 100%;
+      max-height: 680px;
+      width: 470px;
+      /* height: 680px; */
     object-fit: cover;
     border-radius: 16px;
+    }
   }
 
   p {
     width: 300px;
-    margin-left: 20px;
-    font-family: var(--font-mono);
-    color: var(--pearl-frost);
-    font-size: 0.875rem;
+    margin: 0 0 20px 20px;
   }
 }
 
