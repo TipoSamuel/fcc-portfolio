@@ -101,9 +101,7 @@ body {
   display: flex;
   position: fixed;
   justify-content: center;
-  /* color: var(--pearl-frost); */
-
-  margin: 20px auto 0 auto;
+  padding-top: 20px;
   left: 0;
   right: 0;
   z-index: 5;
@@ -130,7 +128,6 @@ body {
       &:hover .nav-item-bg {
         color: var(--green-mantis);
       }
-
 
       .nav-indicator {
         z-index: 0;
