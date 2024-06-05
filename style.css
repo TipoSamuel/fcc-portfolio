@@ -54,6 +54,7 @@ fieldset {
 /* CSS */
 html {
   scroll-behavior: smooth;
+  scroll-padding: 50px;
 }
 
 body {
