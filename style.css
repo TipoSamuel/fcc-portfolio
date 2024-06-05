@@ -87,8 +87,14 @@ body {
   color: var(--pearl-frost);
   font-family: var(--font-sans);
   text-transform: uppercase;
-  font-size: 8rem;
+  font-size: clamp(6rem, 4.5714rem + 3.5714vw, 8rem);
   text-align: center;
+}
+
+.text {
+  color: var(--pearl-frost);
+  font-family: var(--font-mono);
+  font-size: clamp(0.875rem, 0.7857rem + 0.2232vw, 1rem);
 }
 
 #navbar {
