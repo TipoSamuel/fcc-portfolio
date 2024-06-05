@@ -471,15 +471,15 @@ body {
         margin-bottom: 18px;
         /* margin: 0 20px 25px 20px; */
         fill: var(--pearl-frost);
+      }
     }
   }
-}
 
-.marquee[data-animated='true'] .marquee-inner {
-  flex-wrap: nowrap;
-  width: max-content;
-  animation: horizontal-scroll 30s linear infinite;
-}
+  .marquee[data-animated='true'] .marquee-inner {
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: horizontal-scroll 30s linear infinite;
+  }
 }
 
 footer {
