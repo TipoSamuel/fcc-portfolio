@@ -481,6 +481,23 @@ body {
   animation: horizontal-scroll 30s linear infinite;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  padding: 0 20px;
+  text-align: center;
+
+  span {
+    font-size: 0.625rem;
+    color: var(--pearl-frost);
+    font-family: var(--font-mono);
+  }
+
+}
+
 /* animations */
 @keyframes noise {
   0% {
