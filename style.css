@@ -480,6 +480,7 @@ body {
   width: max-content;
   animation: horizontal-scroll 30s linear infinite;
 }
+}
 
 footer {
   display: flex;
